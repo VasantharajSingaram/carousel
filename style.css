@@ -1,0 +1,229 @@
+/* .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .controls button:hover {
+    opacity: 0.7;
+  }
+  .active {
+    opacity: 1;
+  }
+  
+
+
+
+
+
+  
+  .text-reveal {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-reveal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: left;
+    animation: reveal-text 2s ease-out forwards;
+  }
+  
+  .text-reveal h1 {
+    position: relative;
+    z-index: 2;
+    color: #000;
+  }
+  
+  @keyframes reveal-text {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+   */
+
+
+
+
+   /* .carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+  }
+  
+  .slide {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    transform: translateX(0%);
+  }
+  
+  .slide.next {
+    transform: translateX(100%);
+  }
+  
+  .slide.prev {
+    transform: translateX(-100%);
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .prev, .next {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: white;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .prev, .next {
+      font-size: 1em;
+      padding: 5px;
+    }
+  }
+   */
+
+
+   .carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    position: relative;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    transform: translateX(0%);
+  }
+  
+  .slide.next {
+    transform: translateX(100%);
+  }
+  
+  .slide.prev {
+    transform: translateX(-100%);
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .prev, .next {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: white;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .prev, .next {
+      font-size: 1em;
+      padding: 5px;
+    }
+  }
+  
